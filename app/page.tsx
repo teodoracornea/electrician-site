@@ -1,9 +1,7 @@
-import { Button } from "@/components/ui/button";
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <Button>Sună acum</Button>
+    <main className="flex flex-1 items-center justify-center px-4 text-center text-muted-foreground">
+      Hero, Servicii, Despre noi, Testimoniale, Contact — urmează.
     </main>
   );
 }
