@@ -4,11 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, PhoneCall, X } from "lucide-react";
 
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import { Logo } from "@/components/logo";
-import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
-import { getPhoneLink, getWhatsAppLink, navLinks, siteConfig } from "@/lib/site-config";
+import { WhatsAppButton } from "@/components/whatsapp-button";
+import { getPhoneLink, navLinks, siteConfig } from "@/lib/site-config";
 
 export function SiteHeader({ hasLogoFile }: { hasLogoFile: boolean }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,18 +37,7 @@ export function SiteHeader({ hasLogoFile }: { hasLogoFile: boolean }) {
           >
             {siteConfig.phone}
           </a>
-          <a
-            href={getWhatsAppLink()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn(
-              buttonVariants({ size: "lg" }),
-              "bg-[#25D366] text-white hover:bg-[#20bd5a]"
-            )}
-          >
-            <WhatsAppIcon className="size-4" />
-            Scrie pe WhatsApp
-          </a>
+          <WhatsAppButton size="lg" />
         </div>
 
         <button
@@ -84,18 +71,7 @@ export function SiteHeader({ hasLogoFile }: { hasLogoFile: boolean }) {
               <PhoneCall className="size-4" />
               {siteConfig.phone}
             </a>
-            <a
-              href={getWhatsAppLink()}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={cn(
-                buttonVariants({ size: "lg" }),
-                "mt-2 w-full bg-[#25D366] text-white hover:bg-[#20bd5a]"
-              )}
-            >
-              <WhatsAppIcon className="size-4" />
-              Scrie pe WhatsApp
-            </a>
+            <WhatsAppButton size="lg" className="mt-2 w-full" />
           </nav>
         </div>
       )}

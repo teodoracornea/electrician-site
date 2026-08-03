@@ -26,7 +26,7 @@ export function Logo({
     <div className={cn("flex items-center gap-2.5", className)}>
       <span
         className={cn(
-          "flex shrink-0 items-center justify-center rounded-full bg-black",
+          "flex shrink-0 items-center justify-center rounded-full bg-card ring-1 ring-white/10",
           chip
         )}
       >
@@ -41,7 +41,7 @@ export function Logo({
           />
         ) : (
           <Zap
-            className="text-red-600"
+            className="text-accent"
             style={{ width: image * 0.55, height: image * 0.55 }}
             fill="currentColor"
           />
@@ -49,10 +49,10 @@ export function Logo({
       </span>
       {showName && (
         <span className="flex flex-col leading-tight">
-          <span className="text-base font-semibold tracking-tight">
+          <span className="text-base font-semibold tracking-tight text-foreground">
             Electrician Auto
           </span>
-          <span className="text-xs font-medium text-red-600">
+          <span className="text-xs font-medium text-accent">
             {siteConfig.city}
           </span>
         </span>
