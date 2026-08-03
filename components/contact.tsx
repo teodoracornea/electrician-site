@@ -1,10 +1,16 @@
-import { MapPin, PhoneCall } from "lucide-react";
+import { Mail, MapPin, PhoneCall } from "lucide-react";
 import { FadeIn } from "@/components/fade-in";
 import { WhatsAppButton } from "@/components/whatsapp-button";
 import { PhoneButton } from "@/components/phone-button";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 import { FacebookIcon } from "@/components/icons/facebook-icon";
-import { getPhoneLink, getWhatsAppLink, siteConfig } from "@/lib/site-config";
+import { InstagramIcon } from "@/components/icons/instagram-icon";
+import {
+  getEmailLink,
+  getPhoneLink,
+  getWhatsAppLink,
+  siteConfig,
+} from "@/lib/site-config";
 
 const contactMethods = [
   {
@@ -22,10 +28,24 @@ const contactMethods = [
     external: false,
   },
   {
+    icon: Mail,
+    label: "Email",
+    value: siteConfig.email,
+    href: getEmailLink(),
+    external: false,
+  },
+  {
     icon: FacebookIcon,
     label: "Facebook",
     value: "Vezi pagina noastră",
     href: siteConfig.facebookUrl,
+    external: true,
+  },
+  {
+    icon: InstagramIcon,
+    label: "Instagram",
+    value: "Vezi profilul nostru",
+    href: siteConfig.instagramUrl,
     external: true,
   },
 ] as const;
@@ -49,7 +69,7 @@ export function Contact() {
           </div>
         </FadeIn>
 
-        <FadeIn delay={0.1} className="mt-12 grid gap-4 sm:grid-cols-3">
+        <FadeIn delay={0.1} className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {contactMethods.map((method) => (
             <a
               key={method.label}

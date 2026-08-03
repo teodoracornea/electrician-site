@@ -4,8 +4,10 @@ export const siteConfig = {
   city: "Cluj-Napoca",
   phone: "+40779247978",
   whatsapp: "40779247978",
+  email: "alternator.electro@gmail.com",
   facebookUrl:
     "https://www.facebook.com/profile.php?id=100083288735040&locale=ro_RO",
+  instagramUrl: "https://www.instagram.com/electrician.auto.cluj",
 } as const;
 
 export const navLinks = [
@@ -25,4 +27,8 @@ export function getWhatsAppLink(message: string = defaultWhatsAppMessage) {
 
 export function getPhoneLink() {
   return `tel:${siteConfig.phone}`;
+}
+
+export function getEmailLink() {
+  return `mailto:${siteConfig.email}`;
 }
