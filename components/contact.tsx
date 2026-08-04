@@ -30,7 +30,7 @@ const contactMethods = [
   {
     icon: Mail,
     label: "Email",
-    value: siteConfig.email,
+    value: "Click aici",
     href: getEmailLink(),
     external: false,
   },
