@@ -23,10 +23,10 @@ export function Logo({
   const { chip, image } = sizeMap[size];
 
   return (
-    <div className={cn("flex items-center gap-2.5", className)}>
+    <div className={cn("group flex items-center gap-2.5", className)}>
       <span
         className={cn(
-          "flex shrink-0 items-center justify-center rounded-full bg-card ring-1 ring-white/10",
+          "flex shrink-0 items-center justify-center rounded-full bg-card ring-1 ring-white/10 transition-shadow duration-300 group-hover:shadow-[0_0_24px_6px_#f5c5428c]",
           chip
         )}
       >
