@@ -2,11 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, PhoneCall, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 import { Logo } from "@/components/logo";
 import { WhatsAppButton } from "@/components/whatsapp-button";
-import { getPhoneLink, navLinks, siteConfig } from "@/lib/site-config";
+import { navLinks, siteConfig } from "@/lib/site-config";
 
 export function SiteHeader({ hasLogoFile }: { hasLogoFile: boolean }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,12 +36,6 @@ export function SiteHeader({ hasLogoFile }: { hasLogoFile: boolean }) {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <a
-            href={getPhoneLink()}
-            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-          >
-            {siteConfig.phone}
-          </a>
           <WhatsAppButton size="lg" />
         </div>
 
@@ -69,13 +63,6 @@ export function SiteHeader({ hasLogoFile }: { hasLogoFile: boolean }) {
                 {link.label}
               </a>
             ))}
-            <a
-              href={getPhoneLink()}
-              className="flex items-center gap-2 rounded-lg px-3 py-2.5 text-base font-medium text-foreground hover:bg-muted"
-            >
-              <PhoneCall className="size-4" />
-              {siteConfig.phone}
-            </a>
             <WhatsAppButton size="lg" className="mt-2 w-full" />
           </nav>
         </div>
