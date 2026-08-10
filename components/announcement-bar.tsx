@@ -1,4 +1,4 @@
-import { getPhoneLink, getWhatsAppLink } from "@/lib/site-config";
+import { getPhoneLink, getWhatsAppLink, siteConfig } from "@/lib/site-config";
 
 export function AnnouncementBar() {
   return (
@@ -14,7 +14,7 @@ export function AnnouncementBar() {
       </a>{" "}
       și primești o ofertă personalizată în câteva minute:{" "}
       <a href={getPhoneLink()} className="underline underline-offset-2">
-        0779247978
+        {siteConfig.phone}
       </a>
     </div>
   );
