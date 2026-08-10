@@ -14,7 +14,12 @@ export function SiteHeader({ hasLogoFile }: { hasLogoFile: boolean }) {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/80">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="shrink-0" aria-label={siteConfig.name}>
+        <Link
+          href="/"
+          className="shrink-0"
+          aria-label={siteConfig.name}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
           <Logo hasLogoFile={hasLogoFile} />
         </Link>
 
