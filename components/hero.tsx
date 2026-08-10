@@ -35,7 +35,7 @@ export function Hero() {
 
         <FadeIn
           delay={0.15}
-          className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-accent/30 bg-card shadow-lg shadow-black/20"
+          className="relative aspect-[4/3] overflow-hidden rounded-2xl border-4 border-accent bg-card shadow-[0_0_40px_12px_#f5c5428c]"
         >
           {hasHeroImage ? (
             <Image
