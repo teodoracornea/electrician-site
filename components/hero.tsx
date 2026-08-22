@@ -14,7 +14,7 @@ export function Hero() {
         <FadeIn>
           <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/20 bg-accent/10 px-3 py-1 text-sm font-medium text-accent">
             <Zap className="size-4" fill="currentColor" />
-            5+ ani experiență în Cluj-Napoca
+            5+ ani experiență
           </span>
 
           <h1 className="mt-4 text-4xl font-bold tracking-tight text-balance sm:text-5xl">
