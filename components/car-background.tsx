@@ -118,7 +118,7 @@ export function CarBackground() {
           className="h-full w-full object-cover"
         />
       )}
-      <div className="absolute inset-0 bg-background/35" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/35 to-black/70" />
     </div>
   );
 }
