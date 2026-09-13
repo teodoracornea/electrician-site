@@ -79,7 +79,7 @@ export function Contact() {
               href={method.href}
               target={method.external ? "_blank" : undefined}
               rel={method.external ? "noopener noreferrer" : undefined}
-              className="flex flex-col items-center gap-3 rounded-2xl bg-card p-6 text-center shadow-lg shadow-black/10 transition-colors hover:bg-card/80"
+              className="flex flex-col items-center gap-3 rounded-2xl p-6 text-center transition-colors hover:bg-white/5"
             >
               <span className="flex size-11 items-center justify-center rounded-full bg-accent/10 text-accent">
                 <method.icon className="size-5" />

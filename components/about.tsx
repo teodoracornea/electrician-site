@@ -45,7 +45,7 @@ export function About() {
             </div>
           )}
 
-          <div className="rounded-2xl bg-card p-6 shadow-lg shadow-black/10 sm:p-8">
+          <div className="rounded-2xl p-6 sm:p-8">
             <ul className="divide-y divide-border">
             {aboutHighlights.map((highlight) => {
               const Icon = iconMap[highlight.icon];
