@@ -24,7 +24,7 @@ export function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border py-8">
+    <footer className="relative z-10 border-t border-border bg-background/80 py-8">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 sm:flex-row sm:justify-between sm:px-6 lg:px-8">
         <Logo size="sm" hasLogoFile={hasLogoFile} glowOnHover={false} />
 

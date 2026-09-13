@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { AnnouncementBar } from "@/components/announcement-bar";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { CarBackground } from "@/components/car-background";
 import { hasPublicFile } from "@/lib/public-assets.server";
 import { localBusinessSchema } from "@/lib/structured-data";
 import "./globals.css";
@@ -70,6 +71,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
+        <CarBackground />
         <AnnouncementBar />
         <SiteHeader hasLogoFile={hasLogoFile} />
         {children}

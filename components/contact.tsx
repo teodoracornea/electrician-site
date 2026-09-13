@@ -52,7 +52,10 @@ const contactMethods = [
 
 export function Contact() {
   return (
-    <section id="contact" className="scroll-mt-16 py-16 sm:py-24">
+    <section
+      id="contact"
+      className="relative z-10 scroll-mt-16 bg-background/80 py-16 sm:py-24"
+    >
       <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
         <FadeIn>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">

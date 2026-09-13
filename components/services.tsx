@@ -14,7 +14,10 @@ const iconMap: Record<string, LucideIcon> = {
 
 export function Services() {
   return (
-    <section id="servicii" className="scroll-mt-16 bg-secondary/40 py-16 sm:py-24">
+    <section
+      id="servicii"
+      className="relative z-10 scroll-mt-16 bg-secondary/70 py-16 sm:py-24"
+    >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <h2 className="text-center text-3xl font-bold tracking-tight sm:text-4xl">
