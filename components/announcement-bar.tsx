@@ -2,7 +2,7 @@ import { getPhoneLink, getWhatsAppLink, siteConfig } from "@/lib/site-config";
 
 export function AnnouncementBar() {
   return (
-    <div className="bg-accent px-4 py-2 text-center text-sm leading-snug font-medium text-accent-foreground">
+    <div className="relative z-10 bg-accent px-4 py-2 text-center text-sm leading-snug font-medium text-accent-foreground">
       Cauți electrician? Sună sau scrie-ne acum pe{" "}
       <a
         href={getWhatsAppLink()}
