@@ -18,7 +18,7 @@ export function About() {
   return (
     <section
       id="despre-noi"
-      className="relative z-10 scroll-mt-16 bg-background/80 py-16 sm:py-24"
+      className="relative z-10 scroll-mt-16 py-16 sm:py-24"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:grid lg:grid-cols-2 lg:gap-16 lg:px-8">
         <FadeIn>

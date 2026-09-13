@@ -103,19 +103,19 @@ export function CarBackground() {
         <img
           src={frameSrc(1)}
           alt=""
-          className="h-full w-full object-contain"
+          className="h-full w-full object-cover"
         />
       </noscript>
       {enhanced ? (
         <canvas
           ref={canvasRef}
-          className="h-full w-full object-contain"
+          className="h-full w-full object-cover"
         />
       ) : (
         <img
           src={frameSrc(1)}
           alt=""
-          className="h-full w-full object-contain"
+          className="h-full w-full object-cover"
         />
       )}
       <div className="absolute inset-0 bg-background/35" />
