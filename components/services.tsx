@@ -32,7 +32,7 @@ export function Services() {
               <FadeIn
                 key={group.title}
                 delay={index * 0.1}
-                className="rounded-2xl p-6 sm:p-8"
+                className="rounded-2xl bg-card/55 p-6 shadow-lg shadow-black/10 sm:p-8"
               >
                 <div className="flex size-12 items-center justify-center rounded-full bg-accent/10 text-accent">
                   <Icon className="size-6" />
@@ -56,7 +56,7 @@ export function Services() {
 
         <FadeIn
           delay={0.2}
-          className="mt-6 flex flex-col items-start gap-4 rounded-2xl p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8"
+          className="mt-6 flex flex-col items-start gap-4 rounded-2xl bg-card/55 p-6 shadow-lg shadow-black/10 sm:flex-row sm:items-center sm:justify-between sm:p-8"
         >
           <div className="flex items-start gap-4">
             <div className="flex size-12 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
