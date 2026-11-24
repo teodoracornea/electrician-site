@@ -4,9 +4,9 @@ import { cn } from "@/lib/utils";
 import { siteConfig } from "@/lib/site-config";
 
 const sizeMap = {
-  sm: { chip: "size-9", image: 28 },
-  md: { chip: "size-11", image: 34 },
-  lg: { chip: "size-14", image: 44 },
+  sm: { chip: "size-9", image: 36 },
+  md: { chip: "size-11", image: 44 },
+  lg: { chip: "size-14", image: 56 },
 } as const;
 
 export function Logo({
@@ -28,7 +28,7 @@ export function Logo({
     <div className={cn(glowOnHover && "group", "flex items-center gap-2.5", className)}>
       <span
         className={cn(
-          "flex shrink-0 items-center justify-center rounded-full bg-card ring-1 ring-white/10 transition-shadow duration-300",
+          "flex shrink-0 items-center justify-center overflow-hidden rounded-full bg-card ring-1 ring-white/10 transition-shadow duration-300",
           glowOnHover && "group-hover:shadow-[0_0_24px_6px_#f5c5428c]",
           chip
         )}
@@ -45,7 +45,7 @@ export function Logo({
         ) : (
           <Zap
             className="text-accent"
-            style={{ width: image * 0.55, height: image * 0.55 }}
+            style={{ width: image * 0.42, height: image * 0.42 }}
             fill="currentColor"
           />
         )}
